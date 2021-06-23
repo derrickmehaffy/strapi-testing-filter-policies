@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alternative_articles",
+  "info": {
+    "name": "Alternative Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "status": {
+      "model": "status"
+    }
+  }
+}
